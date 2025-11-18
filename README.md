@@ -76,6 +76,6 @@ AWS Cloud Architecture
 ↓ ↓
 [Yes] [No]
 ↓ ↓
-[Done] Static Hosting Enabled]
+[Done] 
 
 
