@@ -1,0 +1,90 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Page Styling */
+body {
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2f3d52;
+    font-size: 28px;
+}
+
+/* Questions */
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f7f9fc;
+    border-left: 5px solid #4e8cff;
+}
+
+.question p {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    background: #4e8cff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #366dcf;
+}
+
+/* Result Text */
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    color: green;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
