@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Solutions Online Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cloud Solutions Online Exam</h1>
+
+        <form id="examForm">
+
+            <div class="question">
+                <p>1. Which AWS service is mainly used for Storage?</p>
+                <label><input type="radio" name="q1" value="wrong"> EC2</label>
+                <label><input type="radio" name="q1" value="correct"> S3</label>
+                <label><input type="radio" name="q1" value="wrong"> Lambda</label>
+                <label><input type="radio" name="q1" value="wrong"> CloudWatch</label>
+            </div>
+
+            <div class="question">
+                <p>2. Which AWS service handles auto-scaling of EC2 instances?</p>
+                <label><input type="radio" name="q2" value="wrong"> S3</label>
+                <label><input type="radio" name="q2" value="correct"> Auto Scaling</label>
+                <label><input type="radio" name="q2" value="wrong"> IAM</label>
+                <label><input type="radio" name="q2" value="wrong"> RDS</label>
+            </div>
+
+            <div class="question">
+                <p>3. Which AWS service monitors cloud resources?</p>
+                <label><input type="radio" name="q3" value="correct"> CloudWatch</label>
+                <label><input type="radio" name="q3" value="wrong"> S3</label>
+                <label><input type="radio" name="q3" value="wrong"> EC2</label>
+                <label><input type="radio" name="q3" value="wrong"> VPC</label>
+            </div>
+
+            <button type="button" class="btn" onclick="submitExam()">Submit Exam</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
