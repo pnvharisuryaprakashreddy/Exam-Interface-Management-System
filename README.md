@@ -10,7 +10,7 @@ The project demonstrates an end-to-end cloud architecture using **AWS S3, EC2, R
 
 ## 🚀 Live Demo  
 👉 Website Link:  
-http://localhost:63342/Exam%20interface/index.html?_ijt=2buupnahk0j0l1m8nhsap6ovfs&_ij_reload=RELOAD_ON_SAVE
+http://localhost:63342/Exam%20interface/index.html?_ijt=df1l1q8i7duid60g21pk04v1ne&_ij_reload=RELOAD_ON_SAVE 
 
 ---
 
