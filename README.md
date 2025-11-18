@@ -21,7 +21,8 @@ https://pnvharisuryaprakashreddy.github.io/Exam-Interface-Management-System/
   │── script.js # Exam logic + scoring
   │── INT330CA2.pdf # Project documentation report
   └── README.md # Full project description
-<img width="1552" height="920" alt="1" src="https://github.com/user-attachments/assets/2ae1e991-e894-4d9b-bc92-1c9f565d1b00" />
+<img width="1552" height="920" alt="19" src="https://github.com/user-attachments/assets/78d059a7-a291-40b7-a0f4-1b6617a4b829" />
+
 
 
 ---
