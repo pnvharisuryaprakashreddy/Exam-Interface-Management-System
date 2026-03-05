@@ -11,6 +11,14 @@
     <div class="container">
         <h1>Cloud Solutions Online Exam</h1>
 
+        <div class="status-bar">
+            <div id="timer">Time left: 01:00</div>
+            <div class="score-summary">
+                <span id="lastScore"></span>
+                <span id="bestScore"></span>
+            </div>
+        </div>
+
         <form id="examForm">
 
             <div class="question">
@@ -35,6 +43,22 @@
                 <label><input type="radio" name="q3" value="wrong"> S3</label>
                 <label><input type="radio" name="q3" value="wrong"> EC2</label>
                 <label><input type="radio" name="q3" value="wrong"> VPC</label>
+            </div>
+
+            <div class="question">
+                <p>4. Which AWS service is a managed relational database service?</p>
+                <label><input type="radio" name="q4" value="wrong"> DynamoDB</label>
+                <label><input type="radio" name="q4" value="correct"> RDS</label>
+                <label><input type="radio" name="q4" value="wrong"> S3</label>
+                <label><input type="radio" name="q4" value="wrong"> CloudFront</label>
+            </div>
+
+            <div class="question">
+                <p>5. Which AWS service is primarily used for running serverless functions?</p>
+                <label><input type="radio" name="q5" value="wrong"> EC2</label>
+                <label><input type="radio" name="q5" value="wrong"> S3</label>
+                <label><input type="radio" name="q5" value="correct"> Lambda</label>
+                <label><input type="radio" name="q5" value="wrong"> Route 53</label>
             </div>
 
             <button type="button" class="btn" onclick="submitExam()">Submit Exam</button>
