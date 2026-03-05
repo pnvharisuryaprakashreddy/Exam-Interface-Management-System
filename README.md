@@ -1,81 +1,315 @@
-# Exam-Interface-Management-System
-A cloud-based Exam Interface Management System built using AWS (S3, EC2, RDS, Lambda, CloudFront) with a modern HTML/CSS/JS frontend.
+# 🚀 Exam Interface Management System (EIMS)
 
-# 📘 Exam Interface Management System (EIMS)
+![AWS](https://img.shields.io/badge/AWS-S3%20Static%20Hosting-orange)
+![Frontend](https://img.shields.io/badge/Frontend-HTML%20CSS%20JavaScript-blue)
+![Deployment](https://img.shields.io/badge/Deployment-AWS%20S3-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-A cloud-enabled **Exam Interface Management System** that allows students to take online exams and automatically evaluates answers.  
-The project demonstrates an end-to-end cloud architecture using **AWS S3, EC2, RDS, Lambda, CloudFront, IAM, WAF, and CloudWatch**, along with a responsive frontend developed using **HTML, CSS, and JavaScript**.
+The **Exam Interface Management System (EIMS)** is a cloud-enabled web application that allows users to take online exams, automatically calculate their score, and display real-time feedback.
 
----
-
-## 🚀 Live Demo  
-👉 Website Link:  
-http://your-bucket-name.s3-website.ap-south-1.amazonaws.com
+This project demonstrates **cloud deployment using AWS S3 static website hosting** along with a modern **HTML, CSS, and JavaScript frontend**.
 
 ---
 
-📂 Project Structure
-  📁 Exam-Interface-Management-System
-  │── index.html # Main exam UI
-  │── style.css # Custom styles for UI
-  │── script.js # Exam logic + scoring
-  │── INT330CA2.pdf # Project documentation report
-  └── README.md # Full project description
-<img width="1552" height="920" alt="19" src="https://github.com/user-attachments/assets/78d059a7-a291-40b7-a0f4-1b6617a4b829" />
+# 📌 Live Demo
 
+```
+AWS Deployment URL
+```
 
+Example:
 
----
-
-💡 Features
-
-✔ Clean and modern UI  
-✔ Responsive design  
-✔ Auto-score calculation  
-✔ Client-side validation  
-✔ Smooth animations  
-✔ Cloud-ready deployment  
-✔ Works perfectly on GitHub Pages or AWS S3  
+```
+http://your-bucket-name.s3-website-ap-south-1.amazonaws.com
+```
 
 ---
 
-🧠 Technologies Used
+# 📷 Project Preview
 
-Frontend
-- HTML5  
-- CSS3  
-- JavaScript 
-
-AWS Cloud Architecture
-- Amazon S3 — Static Website Hosting  
-- Amazon EC2 — Compute for backend  
-- Amazon RDS — MySQL database  
-- AWS Lambda — Serverless functions  
-- AWS IAM — Identity & Access control  
-- AWS CloudFront — CDN caching  
-- AWS WAF — Security firewall  
-- Amazon CloudWatch — Logs & Monitoring  
+<img src="assets/aws-static-hosting.png" width="800">
 
 ---
 
-📘 Architecture Diagram  
+# 🧠 Project Overview
 
-[Start]
-↓
-[Open AWS S3 Console]
-↓
-[Select Your Exam Website Bucket]
-↓
-[Enable Static Website Hosting (if not done)]
-↓
-[Copy Website Endpoint URL]
-↓
-[Paste URL in Browser]
-↓
-[Website Loaded Successfully?]
-↓ ↓
-[Yes] [No]
-↓ ↓
-[Done] 
+The **Exam Interface Management System** provides an interactive interface where users can attempt multiple-choice questions and instantly receive their results.
 
+### Key Features
 
+✔ Modern exam interface  
+✔ Timer-based exam submission  
+✔ Automatic score calculation  
+✔ Correct and incorrect answer highlighting  
+✔ Animated result display  
+✔ Best score tracking using localStorage  
+✔ Cloud deployment using AWS  
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## Cloud Platform
+- Amazon Web Services (AWS)
+
+Services Used:
+
+| AWS Service | Purpose |
+|-------------|--------|
+| **Amazon S3** | Static website hosting |
+| **IAM** | Access control |
+| **CloudFront** *(optional)* | CDN for faster delivery |
+| **CloudWatch** *(optional)* | Monitoring |
+
+---
+
+# 📁 Project Structure
+
+```
+Exam-Interface-Management-System
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets
+│   ├── aws-static-hosting.png
+│   └── aws-bucket-objects.png
+└── README.md
+```
+
+---
+
+# 🧩 Core Components
+
+## index.html
+
+Main entry point of the application.
+
+Contains:
+
+• Exam interface  
+• Multiple choice questions  
+• Countdown timer  
+• Submit button  
+• Result display section  
+
+---
+
+## style.css
+
+Responsible for the **visual design** of the website.
+
+Features:
+
+• Gradient background  
+• Glassmorphism UI  
+• Hover animations  
+• Highlighting for correct/wrong answers  
+• Responsive layout  
+
+---
+
+## script.js
+
+Handles the **core application logic**.
+
+Features implemented:
+
+### Timer System
+- Starts automatically on page load
+- Countdown from **60 seconds**
+- Auto submission when time expires
+
+### Answer Validation
+- Compares selected answers with correct answers
+- Marks correct and incorrect responses
+
+### Score Calculation
+
+Example:
+
+```
+Score = Correct Answers / Total Questions
+```
+
+Displayed as:
+
+```
+You scored 4/5!
+```
+
+### Score Persistence
+
+Using **localStorage**
+
+Stored values:
+
+```
+examLastScore
+examBestScore
+```
+
+Allows tracking the user's best score.
+
+---
+
+# ☁ AWS Deployment Architecture
+
+The project is deployed using **AWS S3 Static Website Hosting**.
+
+## Architecture Diagram
+
+```
+User Browser
+      ↓
+Internet
+      ↓
+AWS S3 Static Website Bucket
+      ↓
+index.html
+style.css
+script.js
+      ↓
+JavaScript runs exam logic
+```
+
+---
+
+# 🚀 Deployment Steps
+
+## Step 1 — Create S3 Bucket
+
+Open AWS Console → S3 → Create Bucket
+
+Example bucket name:
+
+```
+harisurya-exam-system
+```
+
+Region:
+
+```
+Asia Pacific (Mumbai)
+```
+
+---
+
+## Step 2 — Upload Project Files
+
+Upload:
+
+```
+index.html
+style.css
+script.js
+```
+
+---
+
+## Step 3 — Enable Static Website Hosting
+
+Go to:
+
+```
+Bucket → Properties → Static Website Hosting
+```
+
+Enable and set:
+
+```
+Index document: index.html
+```
+
+---
+
+## Step 4 — Configure Public Access
+
+Add bucket policy:
+
+```
+Effect: Allow
+Principal: *
+Action: s3:GetObject
+Resource: arn:aws:s3:::your-bucket-name/*
+```
+
+---
+
+## Step 5 — Access Website
+
+AWS generates a URL like:
+
+```
+http://your-bucket-name.s3-website-ap-south-1.amazonaws.com
+```
+
+Open it to access the application.
+
+---
+
+# 🔄 Application Workflow
+
+```
+User opens website
+        ↓
+AWS S3 serves index.html
+        ↓
+Browser loads CSS and JS
+        ↓
+Exam interface appears
+        ↓
+User answers questions
+        ↓
+User submits exam or timer expires
+        ↓
+JavaScript calculates score
+        ↓
+Result displayed instantly
+```
+
+---
+
+# 🌟 Advantages of AWS S3 Hosting
+
+✔ Highly scalable  
+✔ Low cost (Free Tier eligible)  
+✔ No server maintenance  
+✔ High availability  
+✔ Easy deployment  
+
+---
+
+# 🔮 Future Enhancements
+
+Possible improvements:
+
+• Add backend using **AWS Lambda**  
+• Store exam results in **AWS RDS**  
+• Add **user authentication** using AWS Cognito  
+• Use **CloudFront CDN** for faster delivery  
+• Admin dashboard for creating exams  
+
+---
+
+# 👨‍💻 Author
+
+**Harisurya Prakash Reddy**
+
+B.Tech Computer Science Engineering  
+Cloud & Data Engineering Enthusiast  
+
+GitHub:  
+https://github.com/pnvharisuryaprakashreddy
+
+LeetCode:  
+https://leetcode.com/u/harisurya-reddy/
+
+---
+
+⭐ If you like this project, consider giving it a **star** on GitHub!
